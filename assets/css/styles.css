@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&subset=vietnamese');
+*{	margin:	0;	padding: 0;}
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #222222;
+    background-color: #ffffff;
+}
+h1 { display: block; font-size: 3em;font-weight: lighter;}
+/*menu*/
+#menu{	position: fixed; top: 0px; width: 100%;}
+#menu ul{ list-style-type: none;background: #333333;font-size: 12px;
+	font-weight: 300;text-align: right;}
+#menu ul li{ color: #fff; display: inline-table; width: 120px; height: 40px;
+	line-height: 40px; position: relative;text-align: center; }
+#menu ul li a{ transition: all 0.7s; color: #fff; text-decoration: none; display: block;}
+#menu ul li a:hover{ background: #f04124; color: #fff;}
+#menu ul li ul{	position: absolute;	width:120px;display:none;}
+#menu ul li ul li{ width:100%; float:left}
+#menu ul li ul li ul{ width:200px;margin-left:120px;margin-top:-40px}
+#menu .sub-menu1, #menu .sub-menu2{ display: none; position: absolute;}
+#menu ul li:hover .sub-menu1, #menu ul li ul li:hover .sub-menu2{ display: block;}
+#menu>a>p{ float: left;	margin: 10px;color: #fff;font-size: 18px;}
+#logo{ max-height: 21px;margin: 10px;font-size: 25px;float: left;}
+/*Banner Promo*/
+#promo{ text-align:center;padding:30px;margin-top:40px;
+background: #fff url(../../assets/img/ninhbinh.jpg) no-repeat fixed;
+background-size:cover;min-height: 680px;}
+#promo .jumbotron{	transition: all 0.7s;  border-radius:10px;
+  padding:20px; background-color:rgba(255,255,255,0.5);  max-width:800px;
+  margin: 5% auto;}
+.jumbotron{	color: inherit;	background-color: #fafafa;}
+.jumbotron p{ margin: 30px auto; font-size: 23px; font-weight: 200; color: #454545;}
+.text-left{ text-align: left; padding-left: 20%;}
+.button {background-color: rgba(234, 47, 16, 0.55); border: none; color: white;
+    padding: 15px 32px; text-align: center; text-decoration: none;
+    display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; transition: all 0.7s;}
+.button:hover{ background-color: #ea2f10; transition: all 0.7s;}
+.button-c{ margin: 10px 5px auto auto; width: 80px; height: 30px; background-color: #f04124;
+    border: none; color: white; text-align: center; text-decoration: none; cursor: pointer;}
+.button-c:hover{ background-color: #ea2f10;}
+/*wellcome*/
+.container{	margin: 0 auto;	padding: auto 15px;	width: 70%;}
+.site-section{ text-align: center; padding: 60px 0;}
+.site-section h1{ font-weight: bold; font-size: 2em;}
+#wellcome p{ max-width: 70%; font-size: 20px; margin: 0 auto; color: #666;}
+/*why*/
+#why .column-why i{	color: #fff; font-size: 50px; margin-bottom: 30px;}
+#why h1,#why h2{ color: #fff;}
+#why .column-why{ margin-top: 30px;}
+#why p{	color: #b5b5b5;	padding:0 15px;
+
+}
+#why .column-why h2{ font-weight: normal; margin-bottom: 30px; margin-top:-3px;}
+.row{ margin: auto;}
+.column-why{ width: 33%; float:left; position: relative; box-sizing: border-box;}
+/*section*/
+.dark-section{ background-color: #3a3a3a; padding-bottom: 270px;}
+/*form*/
+.form-a{ width: 500px; height: 600px; margin: 100px auto; text-align: center;}
+input[type=text],input[type=password],input[type=Email], select {
+    width: 50%; padding: 12px 20px; margin: 8px 0; display: inline-block;
+    border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;}
+/*catalog*/
+.box, .box2{ height: 800px; background: white; padding: 20px 60px;}
+.box2{
+	height: 400px; background:#333333; color: white;}
+.box div,.box2 div{	transition: all 0.2s;}
+.box div:hover,.box2 div:hover{	transform: scale(1.1) ;}
+.title{	margin: 20px auto;}
+.box-tag{ width: 200px;	height: 320px; background: #222222;	float: left;
+	margin: 10px 30px 15px 0px;	color: white;	text-align: center;}
+.box-tag img{	width: 200px;}
+.tour-name:hover,.tour-price:hover,.tour-date:hover{ color: red;}
+/*cart*/
+.cart{ background-color: #333333; color: white;	padding:30px 50px 100px;}
+.button-b{ width: 100px; height: 40px; font-size: 16px;	border-radius: 5px;
+	background-color: #272727;	float:left;}
+.cart table { border-collapse: collapse; width: 100%;}
+.cart th{ text-align: center; padding: 8px;}
+.cart td { padding: 8px;}
+.cart tr:nth-child(odd) { background: #333333;}
+.cart tr:nth-child(even){ background: #272727}
+.cart th { background-color: #f04124;}
+.cart div{ margin: 10px 5px auto auto; float: right;}
+/*footer*/
+footer{ background-color:#292c2f; box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ 	box-sizing:border-box; width:100%; height: 200px; text-align:left;
+  	font:bold 16px Open Sans; padding:55px 50px; margin-top:0px; bottom:0; color:#fff;}
+.footer-navigation h3{text-transform: uppercase; margin: 0px;
+	font:normal 36px Open Sans, cursive;	margin-bottom:20px; color:#fff;}
+.footer-navigation h3 a{ text-decoration:none; color:#fff;}
+.footer-navigation h3 span{ color:#8f9296;}.footer-navigation p.links a{color:#fff;text-decoration:none;}
+.footer-navigation p.company-name{ color:#8f9296;font-size:14px; font-weight:normal; margin-top:20px;}
+.footer-contacts p{ display:inline-block; color:#ffffff; vertical-align:middle;}
+.footer-contacts p a{ color:#5383d3; text-decoration:none;}
+.footer-contacts-icon{ background-color:#33383b; color:#fff; font-size:18px; width:38px; height:38px;
+  	border-radius:50%; text-align:center; line-height:38px; margin:10px 15px 10px 0;}
+span.new-line-span{ display:block; font-weight:normal; display:block; font-weight:normal; font-size:14px; line-height:2;}
+.footer-about h4{ display:block; color:#fff; font-size:14px; font-weight:bold; margin-bottom:20px;}
+.footer-about p{ line-height:20px; color:#92999f; font-size:13px; font-weight:normal; margin:0;}
