@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>02</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script type="text/javascript"/></script>
+</head>
+
+<body>
+	<div id='menu'>
+		<a href="index.html">
+			<img id="logo" src="assets/img/logo.png">
+			<p>AZURE TRAVEL</p>
+		</a>
+		<ul>
+			<li>
+				<a href='#'>ĐẶT TOUR</a>
+				<ul class="sub-menu1">
+					<li>
+						<a href="#">Miền Bắc</a>
+						<ul class="sub-menu2">
+							<li><a href="#">Hà Nội</a></li>
+							<li><a href="#">Hải Phòng</a></li>
+							<li><a href="#">Hạ Long</a></li>
+							<li><a href="#">Ninh Bình</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Miền Trung</a>
+						<ul class="sub-menu2">
+							<li><a href="#">Bình Trị Thiên</a></li>
+							<li><a href="#">Đà Nẵng - Hội An</a></li>
+							<li><a href="#">Quảng Ngãi</a></li>
+							<li><a href="#">Bình Định</a></li>
+							<li><a href="#">Phan rang - Phan Thiết</a></li>
+							<li><a href="#">Đà Lạt</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Miền Nam</a>
+						<ul class="sub-menu2">
+							<li><a href="#">Sài Gòn</a></li>
+							<li><a href="#">Cần Thơ - Sa Đéc</a></li>
+							<li><a href="#">Củ Chi - U Minh Thượng</a></li>
+							<li><a href="#">Cà Mau</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		   	<li>
+		   		<a href='#'>THUÊ XE</a>
+		   		<ul class="sub-menu1">
+		   			<li><a href="#">Xe Du lịch</a></li>
+		   			<li><a href="#">Xe Xự kiện</a></li>
+		   		</ul>
+		   	</li>
+		   	<li><a href='#'>KHÁCH SẠN</a></li>
+		   	<li><a href='#'>VÉ MÁY BAY</a></li>
+		   	<li><a href='#'>LÀM VISA</a></li>
+		   	<li><a href='#'>LIÊN HỆ</a></li>
+		   	<li>
+		   		<a href='#'>TÀI KHOẢN</a>
+		   		<ul class="sub-menu1">
+		   			<li><a href="#" onclick="openLogin();">Đăng Nhập</a></li>
+		   			<li><a href="#" onclick="opensignup();">Đăng Ký</a></li>
+		   		</ul>
+
+		   	</li>
+		</ul>
+	</div>
+    <div id="promo">
+        <div class="jumbotron">
+            <h1>Trại hè du lịch Việt</h1>
+            <p>MADAGUI - Bí Ẩn Rừng Xanh </p>
+            <p class="text-left">
+				- kỹ năng giao tiếp <br>
+				- kỹ năng tổ chức lãnh đạo <br>
+				- kỹ năng xây dựng và làm việc theo đội nhóm <br>
+				- kỹ năng tư duy, giải quyết vấn đề
+            </p>
+            <p>
+            	<button class="button">SALE OFF 20%</button>
+            </p>
+        </div>
+    </div>
+    <div id="wellcome" class="container site-section">
+    	<h1>Chào mừng bạn đã đến AZURE TRAVEL</h1>
+    	<p>AZURE TRAVEL đã thành lập vào tháng 5 năm 1999 <br> với sứ mệnh cung cấp dịch vụ du lịch 1 cách hoàn hảo nhất để đáp ứng mọi nhu cầu của bạn</p>
+    </div>
+    <div class="dark-section">
+    <div class="container site-section" id="why">
+        <h1>Why Choose Us</h1>
+        <div class="row">
+            <div class="column-why"><i><img src="assets/img/icons8-The Flash Sign-50.png"></i>
+                <h2>Fast </h2>
+                <p>Chúng tôi luôn cố găng để mang đến cho bạn dịch vụ với tốc độ xử lý nhanh nhất có thể</p>
+            </div>
+            <div class="column-why"><i><img src="assets/img/icons8-Prize-50.png"></i>
+                <h2>Reputation </h2>
+                <p>AZURE là tập đoàn đa quốc gia với hơn 200 dịch vụ lớn nhỏ. Được thành lập vào năm 1997, với 20 năm kinh nghiệm chúng tôi đảm bảo về giá cả và chất lượng dịch vụ hoàn hảo nhất đến với bạn</p>
+            </div>
+            <div class="column-why"><i><img src="assets/img/icons8-Tags-50.png"></i>
+                <h2>Cheap </h2>
+                <p>Luôn luôn cố gắn giảm giá thành để các dịch vụ chúng tôi cung cấp được phục vụ tất cả khách hàng</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box">
+	<h2 class="title">Tour du lịch</h2>
+	<div class="box-tag">
+		<img src="assets/img/Ha-Giang-3.jpg">
+		<p class="tour-name">Cao Bằng - Lũng Cú</p>
+		<p class="tour-date">3 ngày 2 đêm</p>
+		<p class="tour-price">4.000.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T01" class="add-to-cart button-c" data-name="Cao Bằng - Lũng Cú" data-price="4000000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/PhoCoHoiAn.jpg">
+		<p class="tour-name">Đà Nẵng - Hội An</p>
+		<p class="tour-date">3 ngày 2 đêm</p>
+		<p class="tour-price">9.000.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T02" class="add-to-cart button-c" data-name="Đà Nẵng - Hội An" data-price="9000000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/Vinh-Bai-Tu-Long.jpg">
+		<p class="tour-name">Vịnh Hạ Long</p>
+		<p class="tour-date">2 ngày 1 đêm</p>
+		<p class="tour-price">4.000.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T03" class="add-to-cart button-c" data-name="Vịnh Hạ Long" data-price="4000000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/kph_cố đô huế 1.jpg">
+		<p class="tour-name">Huế</p>
+		<p class="tour-date">2 ngày 1 đêm</p>
+		<p class="tour-price">3.800.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T04" class="add-to-cart button-c" data-name="Huế" data-price="3800000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/dom-dom.jpg">
+		<p class="tour-name">Cần Thơ - Mỹ Tho</p>
+		<p class="tour-date">2 ngày 1 đêm</p>
+		<p class="tour-price">5.600.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T05" class="add-to-cart button-c" data-name="Cần Thơ - Mỹ Tho" data-price="5600000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/diadiemanuong-com-quang-truong-lam-vien-diem-den-moi-thu-hut-gioi-tre-o-da-latee4921cb635890749341502503.jpg">
+		<p class="tour-name">Đà Lạt -Langbiang</p>
+		<p class="tour-date">3 ngày</p>
+		<p class="tour-price">9.800.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T06" class="add-to-cart button-c" data-name="Đà Lạt -Langbiang" data-price="9000000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/nhatrang.jpg">
+		<p class="tour-name">Nha Trang</p>
+		<p class="tour-date">2 ngày</p>
+		<p class="tour-price">7.300.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T07" class="add-to-cart button-c" data-name="Nha Trang" data-price="7300000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/madagui.jpg">
+		<p class="tour-name">MADAGUI - Bí Ẩn Rừng Xanh</p>
+		<p class="tour-date">7 ngày</p>
+		<p class="tour-price">5.300.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T08" class="add-to-cart button-c" data-name="MADAGUI - Bí Ẩn Rừng Xanh" data-price="5300000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/5214486810_49ccd5c42f_z.jpg">
+		<p class="tour-name">Sài Gòn</p>
+		<p class="tour-date">1 ngày</p>
+		<p class="tour-price">2.300.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T09" class="add-to-cart button-c" data-name="Sài Gòn" data-price="2300000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/cu-lao-cham-banner2.jpg">
+		<p class="tour-name">Cù Lao Chàm</p>
+		<p class="tour-date">2 ngày</p>
+		<p class="tour-price">6.300.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T10" class="add-to-cart button-c" data-name="Cù lao chàm" data-price="6300000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/sadec-1.jpg">
+		<p class="tour-name">Làng Hoa Sa Đéc</p>
+		<p class="tour-date">1 ngày</p>
+		<p class="tour-price">2.100.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T11" class="add-to-cart button-c" data-name="Làng Hoa Sa Đéc" data-price="2100000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/hang-mua-ninh-binh-ivivu-12.jpg">
+		<p class="tour-name">Ninh Bình</p>
+		<p class="tour-date">2 ngày</p>
+		<p class="tour-price">2.200.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="T12" class="add-to-cart button-c" data-name="Ninh Bình" data-price="2200000">Add Cart</button>
+	</div>
+</div>
+<div class="box2">
+	<h2 class="title2">Thuê xe</h2>
+	<div class="box-tag">
+		<img src="assets/img/bmw.jpg">
+		<p class="tour-name">BMW Series 3</p>
+		<p class="tour-date">4 chỗ</p>
+		<p class="tour-price">1.200.000 VND/Ngày</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="X01" class="add-to-cart button-c" data-name="BMW Series 3" data-price="1200000">Add Cart</button>
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/innova-V-6.jpg">
+		<p class="tour-name">INNOVA 2017</p>
+		<p class="tour-date">6 chỗ</p>
+		<p class="tour-price">1.000.000 VND/Ngày</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="X02" class="add-to-cart button-c" data-name="INNOVA 2017" data-price="1000000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/30cho.jpg">
+		<p class="tour-name">XE DU LỊCH</p>
+		<p class="tour-date">29-35 CHỖ</p>
+		<p class="tour-price">4.000.000 VND/Ngày</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="X03" class="add-to-cart button-c" data-name="XE DU LỊCH 29-35" data-price="4000000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/30cho.jpg">
+		<p class="tour-name">XE DU LỊCH</p>
+		<p class="tour-date">35-45 Chỗ</p>
+		<p class="tour-price">5.800.000 VND/ngày</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="X04" class="add-to-cart button-c" data-name="XE DU LỊCH 35-45" data-price="5800000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/16cho.jpg">
+		<p class="tour-name">XE DU LỊCH</p>
+		<p class="tour-date">10-15 chỗ</p>
+		<p class="tour-price">600.000 VND/Ngày</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="X05" class="add-to-cart button-c" data-name="XE DU LỊCH 10-15" data-price="600000">Add Cart</button>
+
+	</div>
+	<div class="box-tag">
+		<img src="assets/img/Chevrolet_Captiva.jpg">
+		<p class="tour-name">CHEVROLET CAPTIVA</p>
+		<p class="tour-date">7 chỗ</p>
+		<p class="tour-price">1.500.000 VND</p>
+		<button class="button-c">Xem chi tiết</button>
+		<button id="X06" class="add-to-cart button-c" data-name="CHEVROLET CAPTIVA" data-price="1500000">Add Cart</button>
+
+	</div>
+</div>
+<div class="cart">
+	<h2 class="title">Giỏ Hàng</h2>
+    <table class="table table-bordered" id="table-products" >
+        <thead>
+            <tr>
+                <th style="text-align: left;">Id</th>
+                <th style="text-align: left;">Name</th>
+                <th style="text-align: center;">Price</th>
+                <th style="text-align: center;">Quantity</th>
+                <th style="text-align: right;">Total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button class="button-c button-b" id="button-clear">Clear</button>
+    <button class="button-c button-b">Buy</button>
+	<div id="sumtotal"></div>
+</div>
+<footer>
+    <div class="row">
+        <div class="column-why footer-navigation">
+            <h3><a href="#">Azure<span>travel </span></a></h3>
+            <p class="links"><a href="#">Tour </a><strong> · </strong><a href="#">Thuê xe</a><strong> · </strong><a>Khách sạn</a><strong> · </strong><a href="#">Vé máy bay</a><strong> · </strong><a href="#">Làm Visa</a></p>
+            <p class="company-name">Copy right by Ryan Studio © May 2017 </p>
+        </div>
+        <div class="column-why footer-contacts">
+            <div><p><span class="new-line-span">48 Cao thắng</span> Đà Nẵng Việt Nam</p>
+            </div>
+            <div><p>+84 1269794806</p>
+            </div>
+            <div>
+                <p>microzone.azure@gmail.com</p>
+            </div>
+        </div>
+        <div class="column-why footer-about">
+            <h4>About the company</h4>
+            <p>AZURE TRAVEL đã khởi nghiệp vào tháng 5 năm 2017
+với sứ mệnh cung cấp dịch vụ du lịch 1 cách hoàn hảo nhất để đáp ứng mọi nhu cầu của bạn.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    var shoppingCartItems = [];
+    var arrTotal = [];
+
+    $(document).ready(function () {
+        displayShoppingCartItems();
+    });
+    $(".add-to-cart").click(function () {
+        var button = $(this);
+        var id = button.attr("id");
+        var name = button.attr("data-name");
+        var price = button.attr("data-price");
+        var quantity = 1;
+        var sum = 0;
+        var item = {
+            id: id,
+            name: name,
+            price: price,
+            quantity: quantity,
+        };
+        var intPrice= parseInt(item.price);
+        arrTotal.push(intPrice);
+    	for( var count = 0; count < arrTotal.length; count++){
+  			sum = sum + arrTotal[count];
+		}
+		$("#sumtotal").html("<h2>"+"Sumtotal: "+sum+"</h2>");
+        var exists = false;
+        if (shoppingCartItems.length > 0) {
+            $.each(shoppingCartItems, function (index, value) {
+                if (value.id == item.id) {
+                    value.quantity++;
+                    exists = true;
+                    return false;
+                }
+            });
+        }
+        if (!exists) {
+            shoppingCartItems.push(item);
+        }
+        displayShoppingCartItems();
+    });
+    $("#button-clear").click(function () {
+    	arrTotal = [];
+    	sum = 0;
+        shoppingCartItems = [];
+        $("#table-products > tbody").html("");
+        $("#sumtotal").html("");
+    });
+    function displayShoppingCartItems() {
+
+            $("#table-products > tbody").html("");
+            $.each(shoppingCartItems, function (index, item) {
+                var htmlString = "";
+                htmlString += "<tr>";
+                htmlString += "<td>" + item.id + "</td>";
+                htmlString += "<td>" + item.name + "</td>";
+                htmlString += "<td style='text-align: center'>" + item.price + "</td>";
+                htmlString += "<td style='text-align: center'>" + item.quantity + "</td>";
+                htmlString += "<td style='text-align: right'>" + item.price * item.quantity + "</td>";
+                htmlString += "</tr>";
+                $("#table-products > tbody:last").append(htmlString);
+            });
+    }
+    function openLogin(){
+			windowChild=window.open("login.html","windowChild","width=1200, height=500");
+			// Mở trang web trường cdcn trong cửa sổ mới
+		}
+	function opensignup(){
+			windowChild=window.open("signup.html","windowChild","width=1200, height=500");
+			// Mở trang web trường cdcn trong cửa sổ mới
+		}
+</script>
